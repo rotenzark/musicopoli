@@ -639,7 +639,7 @@
       var en = inglese();
       elEta.textContent = en ? 'Age ' + eta : eta + ' anni';
       elN.textContent = nomi.length + (en ? (nomi.length === 1 ? ' course' : ' courses') : (nomi.length === 1 ? ' corso' : ' corsi'));
-      var lista = nomi.map(function (n) { return en ? n : n.toLowerCase(); }).join(', ');
+      var lista = nomi.map(function (n) { return en ? n : n.charAt(0).toLowerCase() + n.slice(1); }).join(', '); // «vacanze a Pinarella»
       elElenco.textContent = en ? 'At ' + eta + ': ' + lista + '.' : 'A ' + eta + ' anni: ' + lista + '.';
       righe.forEach(function (r) { r.classList.toggle('is-attiva', r.cells[c + 1].classList.contains('on')); });
     };
