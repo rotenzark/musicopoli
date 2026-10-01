@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
 <script>document.documentElement.classList.remove('no-js')</script>
 <title>Musicopoli Città delle Arti — scuola di musica e di danza a Milano, dai 4 ai 94 anni</title>
 <meta name="description" content="Musicopoli Città delle Arti, scuola di musica e di danza in Via Pietro Boifava 29/A a Milano: canto, strumenti, danza classica e moderna, hip hop, yoga, zumba, pilates, inglese, campus e vacanze d'estate. Dai 4 ai 94 anni, prima lezione di prova gratuita. WhatsApp 333 836 6044.">
@@ -18,9 +19,7 @@
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;600&family=League+Spartan:wght@500;700;800&family=Rethink+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fonts/fonts.css?v=1">
 <link rel="stylesheet" href="css/styles.css?v=1">
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
@@ -284,7 +283,7 @@
       <p data-i18n="o.acc">Ingresso e parcheggio accessibili in sedia a rotelle.</p>
     </div>
     <div class="mappa">
-      <iframe src="https://www.google.com/maps?q=Musicopoli,+Via+Pietro+Boifava+29A,+20142+Milano&amp;z=16&amp;output=embed" title="Mappa: Musicopoli, Via Pietro Boifava 29/A, Milano" data-i18n-title="o.mappa" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="mappa-clic" data-mappa-clic style="--mappa-h: 320px"><template><iframe src="https://www.google.com/maps?q=Musicopoli,+Via+Pietro+Boifava+29A,+20142+Milano&amp;z=16&amp;output=embed" title="Mappa: Musicopoli, Via Pietro Boifava 29/A, Milano" data-i18n-title="o.mappa" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></template><div class="mappa-clic__velo"><a class="mappa-clic__btn" href="https://www.google.com/maps/search/?api=1&amp;query=Musicopoli+Via+Pietro+Boifava+29A+Milano" target="_blank" rel="noopener">Mostra la mappa</a><p class="mappa-clic__nota">La mappa è di Google: aprendola, Google riceve il tuo indirizzo IP e può usare i suoi cookie.</p></div></div>
       <a class="btn btn--scuro" href="https://www.google.com/maps/search/?api=1&amp;query=Musicopoli+Via+Pietro+Boifava+29A+Milano" target="_blank" rel="noopener" data-i18n="o.btn">Indicazioni stradali</a>
     </div>
   </section>
@@ -295,7 +294,7 @@
   <p class="marchio marchio--piede"><span class="marchio__b">M</span>USI<span class="marchio__b">C</span>OPO<span class="marchio__b">LI</span></p>
   <p>Musicopoli Città delle Arti · <span data-i18n="z.aps">associazione di promozione sociale</span> · CF 97251980153</p>
   <p>Via Pietro Boifava 29/A · Via Boifava 4C · Via Duccio di Boninsegna 23 · Milano · <a href="https://wa.me/393338366044" target="_blank" rel="noopener">WhatsApp 333&nbsp;836&nbsp;6044</a></p>
-  <p class="piede__cred" data-i18n="z.cred">Sito dimostrativo realizzato da <a href="https://bespokestud.io" rel="noopener">Bespoke Studio</a> · testi dal loro sito e dal loro Instagram (settembre 2026), dalla scheda Google e dalla stampa (Fanpage 2022, Il Sud Milano 2025); recensioni pubbliche su Google (settembre 2026); fotografie dalla scheda Google e dal loro Instagram.</p>
+  <p class="piede__cred" data-i18n="z.cred">Sito dimostrativo realizzato da <a href="https://bespokestud.io" rel="noopener">Bespoke Studio</a> · <a href="privacy.html">Privacy</a> · testi dal loro sito e dal loro Instagram (settembre 2026), dalla scheda Google e dalla stampa (Fanpage 2022, Il Sud Milano 2025); recensioni pubbliche su Google (settembre 2026); fotografie dalla scheda Google e dal loro Instagram.</p>
 </footer>
 
 <nav id="actionBar" class="barra" aria-label="Azioni rapide" data-i18n-aria="x.nav">
@@ -310,5 +309,6 @@
   <img id="lightboxImg" src="" alt="">
 </div>
 
+<script src="js/mappa-clic.js?v=1" defer></script>
 </body>
 </html>
